@@ -99,3 +99,12 @@ WHERE HoTenSV LIKE N'Phan%';
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8db1b215-4c2f-48cd-b090-ef87c09c62f1" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/efd39e24-3113-4edd-843a-da454fc63353" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74cce354-cee4-4b67-b5ec-33b76b5a0f16" />
+
+
+16. Mở file dulieu.sql của bước 14, chạy toàn bộ các lệnh
+Kiểm tra database từ file dulieu.sql giữ nguyên cấu trúc cũ
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/925eecd6-de1a-4fa7-a0b9-25d8f6e0d5b3" />
+Kiểm tra dữ liệu các bảng khi tạo lại  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/80e1ffca-9dfc-4c36-b9ae-1767d84ae29d" />
+
+17. Upload file dulieu.sql lên github repository
