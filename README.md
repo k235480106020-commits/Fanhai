@@ -63,3 +63,39 @@ SELECT * FROM SinhVien Where masv='K235480106020';
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b5f6e93c-b121-4cff-8318-4fe6cb6898a8" />
 
 
+11. Cập nhật trường noisinh thành 'Sao Hoả' cho những dòng có noisinh và diachi đề là null
+```powershell
+UPDATE SinhVien
+SET NoiSinh = N'Sao Hoả'
+WHERE NoiSinh = 'NULL' AND DiaChi = 'NULL';
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9e82913-0268-44cb-bf5b-c63b3aa8e2c0" />
+
+
+12.  Tạo bảng SaoHoa gồm những sinh viên có nơi sinh ở 'Sao Hoả'
+```powershell
+SELECT * 
+INTO SaoHoa
+FROM SinhVien
+WHERE NoiSinh = N'Sao Hoả';
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9ca74bc5-9abb-4e85-9b18-05f57b796bff" />
+
+
+13. Gõ lệnh xoá (delete) trong bảng SaoHoa những sinh viên cùng họ với em, vd em họ nguyễn thì xoá những sv họ 'Phan'  
+```powershell
+DELETE FROM SaoHoa 
+WHERE HoTenSV LIKE N'Phan%';
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/790b7cc2-2308-4a62-b052-fe70c0adf59e" />
+
+
+14.  Xuất toàn bộ kết quả của các bước 6,7,8,9,10,11,12,13 ra file dulieu.sql
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66a523a9-fc1d-458e-93f5-8a23d945aa83" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8c0d30b7-ac24-4db3-b252-2a7c79bc9424" />
+
+
+15. Xoá csdl đã tạo, kiểm tra tại path 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8db1b215-4c2f-48cd-b090-ef87c09c62f1" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/efd39e24-3113-4edd-843a-da454fc63353" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74cce354-cee4-4b67-b5ec-33b76b5a0f16" />
